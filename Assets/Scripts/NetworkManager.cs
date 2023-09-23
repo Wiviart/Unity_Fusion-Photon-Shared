@@ -107,7 +107,7 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
     public static NetworkManager Instance { get; private set; }
     NetworkRunner runner;
     [SerializeField] NetworkPlayer playerPrefab;
-
+    
     void Awake()
     {
         Instance = this;

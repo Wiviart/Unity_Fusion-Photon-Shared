@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Fusion;
 using UnityEngine;
 
@@ -23,6 +25,8 @@ public class NetworkPlayer : NetworkBehaviour, IPlayerLeft
     public override void Spawned()
     {
         characterControllerPrototype = GetComponent<NetworkCharacterControllerPrototype>();
+
+        gameObject.name = $"Player {Object.InputAuthority.PlayerId}";
     }
 
     private void Update()

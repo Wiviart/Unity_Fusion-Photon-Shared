@@ -1630,6 +1630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 7916988953275459688, guid: d410e61ab7468644c9fdb6adf8da00c5, type: 3}
+  players: []
 --- !u!1 &1105061270
 GameObject:
   m_ObjectHideFlags: 0
@@ -3084,11 +3085,11 @@ RectTransform:
   m_Father: {fileID: 2084748212771165582}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -400, y: 0}
   m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &6551948264129007457
 GameObject:
   m_ObjectHideFlags: 0
