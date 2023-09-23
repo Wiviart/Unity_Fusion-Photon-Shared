@@ -6,7 +6,7 @@ using Fusion;
 using UnityEngine;
 
 [RequireComponent(typeof(NetworkCharacterControllerPrototype))]
-public class NetworkPlayer : NetworkBehaviour, IPlayerLeft
+public class NetworkPlayer : NetworkBehaviour
 {
     PlayerInput input;
     Vector2 directionInput = Vector2.zero;
@@ -44,11 +44,5 @@ public class NetworkPlayer : NetworkBehaviour, IPlayerLeft
     private void OnDisable()
     {
         input.Disable();
-    }
-
-    public void PlayerLeft(PlayerRef player)
-    {
-        if (player == Object.InputAuthority)
-            Runner.Despawn(Object);
     }
 }
